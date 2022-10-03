@@ -1,0 +1,13 @@
+// Smooth Scrolling when Clicking Nav Section Links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'center' 
+        });
+  
+    });
+  });
+  

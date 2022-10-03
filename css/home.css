@@ -1,0 +1,1076 @@
+main {
+    background-color: #85e3ff;
+}
+
+main > .bg-img {
+    width: 100%;
+    height: 315px;
+    background-color: #85e3ff;
+    background-image: url('../images/profile/Vector.png');
+    background-size: 120%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: 769px) {
+    main > .bg-img {
+        background-size: 50%;
+    }
+}
+
+/* Profile */
+
+.profile {
+    font-family: metropolis;
+    color: #000;
+    margin: 0 auto;
+    margin-top: -100px;
+    padding: 30px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.07);
+}
+
+.profile > img {
+    width: 161px;
+    height: 161px;
+    float: left;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: -80px;
+    margin-left: -20px;
+}
+
+.profile-data h1 {
+    font-family: metropolis-md;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.profile-data button {
+    position: relative;
+    float: right;
+    bottom: 0;
+    border-radius: 20px;
+    margin-right: -40px;
+    margin-top: 10px;
+    background-color: #48BEFF;
+    color: #fff;
+    border: 0;
+    padding: 10px 20px;
+    box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.55);
+}
+
+.profile-data button:hover {
+    cursor: pointer;
+}
+
+@media (min-width: 769px) {
+    .profile {
+        width: 95%;
+        text-align: left;
+    }
+
+    .profile .profile-data {
+        margin-left: 180px;
+    }
+}
+
+/* Edit Profile Modal */
+.profile-modal-content > .bg-img {
+    background-color: #48BEFF;
+    background-image: url('../images/profile/Vector.png');
+}
+
+.profile-modal-content > img {
+    float: left;
+    margin-left: 50px;
+    margin-top: -100px;
+}
+
+.profile-modal-content form input,
+.profile-modal-content form select {
+    font-family: metropolis;
+    font-size: 13px;
+    color: #48BEFF;
+    border: 0;
+    border-bottom: 1px solid #48BEFF;
+    padding: 10px 0;
+}
+
+
+
+
+.profile-modal-content form input::placeholder {
+    font-family: metropolis;
+    font-size: 13px;
+    color: #48BEFF;
+    padding: 10px 10px;
+}
+
+.profile-modal .filter-gender div,
+.generate-modal .filter-gender div {
+    padding: 10px 40px;
+}
+
+.profile-modal .filter-gender .active {
+    background-color: #48BEFF;
+    color: #000;
+}
+
+
+.profile-modal-content form > input[type="submit"] {
+    background-color: #48BEFF;
+    color: #ABF7F9;
+}
+
+
+.profile-modal-content form .bday {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid #48BEFF;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+
+.profile-modal-content form input[type="date"] {
+    border: 0;
+}
+
+.profile-modal-content form input::placeholder,
+.profile-modal-content form select,
+.profile-modal-content form label{
+    color: #48BEFF;
+}
+
+.profile-modal-content h1 {
+    color: #48BEFF;
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+
+
+  /* Create Modal */
+.create-modal-content > .bg-img {
+    background-color: #48BEFF;
+    background-image: url('../images/profile/Vector.png');
+}
+
+.create-modal-content form {
+    color: #48BEFF;
+}
+
+.create-modal-content form > input[type="submit"] {
+    background-color: #48BEFF;
+    color: #ABF7F9;
+}
+
+.create-modal-content h1 {
+    color: #48BEFF;
+}
+
+.create-modal-content form input[type="email"],
+.create-modal-content form select {
+    border-color:  #48BEFF;
+}
+
+.create-modal-content form input::placeholder,
+.create-modal-content form select,
+.create-modal-content form label{
+    color: #48BEFF;
+}
+
+.create-modal .checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.create-modal .checkbox div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.create-modal .checkbox div label {
+    margin-left: 10px;
+}
+
+
+/* Submit Report Modal Content */
+.submit-modal-content > .bg-img {
+    background-color: #3DBD96;
+    background-image: url('../images/profile/Vector.png');
+}
+
+.submit-modal-content form {
+    color: #3DBD96;
+}
+
+.submit-modal-content form > input[type="submit"] {
+    background-color: #3DBD96;
+    color: #ABF7F9;
+}
+
+.submit-modal-content h1 {
+    color: #3DBD96;
+}
+
+.submit-modal-content form > input {
+    border: 0;
+    border-bottom: 1px solid #3DBD96;
+}
+
+.submit-modal-content form input::placeholder,
+.submit-modal-content form label,
+.submit-modal-content form textarea::placeholder{
+    color: #3DBD96;
+    font-family: metropolis;
+}
+
+.submit-modal-content form textarea {
+    margin-top: 10px;
+    border-color: #3DBD96;
+    height: 50px;
+}
+
+.submit-modal-content form .date,
+.submit-modal-content form .time {
+    border-bottom: 1px solid #05A575;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.submit-modal-content form > div input {
+    margin-left: 10px;
+}
+
+.submit-modal-content form input[type="date"],
+.submit-modal-content form input[type="time"] {
+    text-transform: uppercase;
+    border: 0;
+    color: #3DBD96;
+}
+
+
+.submit-modal-content form > label {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.submit-modal-content form input:nth-child(3),
+.submit-modal-content form input:nth-child(5) {
+    border: 0;
+    border-bottom: 1px solid #05A575;
+    width: 100%;
+}
+
+
+.attendance {
+    margin-left: 40px;
+}
+
+.attendance div {
+    width: 250px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attendance input {
+    border: 1px solid #05A575;
+}
+
+/* Generate Report Modal Content */
+.generate-modal-content > .bg-img {
+    background-color: #A3D465;
+    background-image: url('../images/profile/Vector.png');
+}
+
+.generate-modal-content form {
+    color: #A3D465;
+}
+
+.generate-modal-content form input,
+.generate-modal-content form select {
+    font-family: metropolis;
+    font-size: 13px;
+    color: #A3D465;
+    border: 0;
+    border-bottom: 1px solid #A3D465;
+}
+
+.generate-modal-content form > input[type="submit"] {
+    background-color: #A3D465;
+    color: #ABF7F9;
+}
+
+.generate-modal-content h1 {
+    color: #A3D465;
+}
+
+.generate-modal-content form input::placeholder,
+.generate-modal-content form label,
+.generate-modal-content form textarea::placeholder{
+    color: #A3D465;
+}
+
+.generate-modal-content form textarea {
+    border-color: #A3D465;
+}
+
+.generate-modal-content form .date {
+    border: 0;
+    border-bottom: 1px solid #A3D465;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.generate-modal-content form input[type="date"] {
+    color: #A3D465;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.generate-modal-content form > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.generate-modal-content form input {
+    border: 0;
+    border-bottom: 1px solid #A3D465;
+}
+
+.generate-modal .checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.generate-modal .checkbox div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.generate-modal .checkbox div label {
+    margin-left: 10px;
+}
+
+
+
+.generate-modal .filter-gender .active {
+    background-color: #A3D465;
+    color: #000;
+}
+
+
+
+
+  /* Functions */
+
+.functions {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.functions button {
+    font-size: 16px;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: #48BEFF;
+    color: #fff;
+    border: 0;
+    padding: 10px 25px;
+    box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 2px 1px 5px 0px rgba(0,0,0,0.55);
+
+}
+
+.functions button:hover {
+    cursor: pointer;
+}
+
+/* Trainings */
+.trainings {
+    padding: 0 40px;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.trainings > section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.trainings form input {
+    border: 0;
+    border-bottom: 1px solid #4AF851;
+}
+
+@media (min-width: 769px) {
+    .trainings {
+        justify-content: flex-start;
+    }
+}
+
+.trainings .training-card {
+    cursor: pointer;
+}
+
+.trainings .training-card img{
+    height: 60px;
+    width: 60px;
+}
+
+.trainings .training-card:hover {
+    opacity: .8;
+}
+
+.trainings section:nth-child(1) .training-card:nth-child(1) {
+    background-color: #FF3294;
+}
+
+.trainings section:nth-child(1) .training-card:nth-child(2) {
+    background-color: #32DAFF;
+}
+
+.trainings  section:nth-child(1) .training-card:nth-child(3) {
+    background-color: #4AF851;
+}
+
+.trainings  section:nth-child(1) .training-card:nth-child(4) {
+    background-color: #FF9040;
+}
+
+.trainings  section:nth-child(1) .training-card:nth-child(5) {
+    background-color: #DF4AF8;
+}
+
+.trainings  section:nth-child(2) .training-card:nth-child(1) {
+    background-color: #325FFF;
+}
+
+.trainings  section:nth-child(2) .training-card:nth-child(2) {
+    background-color: #FFEA32;
+}
+
+.trainings  section:nth-child(2) .training-card:nth-child(3) {
+    background-color: #F46141;
+}
+
+.trainings  section:nth-child(3) .training-card:nth-child(1) {
+    background-color: #FF3232;
+}
+
+.trainings  section:nth-child(3) .training-card:nth-child(2) {
+    background-color: #23a798;
+}
+
+.trainings  section:nth-child(3) .training-card:nth-child(3) {
+    background-color: #40D460;
+}
+
+
+.training-card {
+    font-family: 'Lexend', sans-serif;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 30px;
+    width: 161px;
+    height: 161px;
+}
+
+.training-card h2 {
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+}
+
+.training-card div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.training-card div p {
+    margin-left: 5px;
+    font-size: 52px;
+}
+
+.trainings {
+    padding-bottom: 100px;
+}
+
+
+.basic-modal-content h1,
+.life-modal-content h1,
+.sol1-modal-content h1,
+.sol2-modal-content h1,
+.sol3-modal-content h1,
+.cell-training-content h1,
+.baptism-modal-content h1,
+.weddings-modal-content h1,
+.cd-modal-content h1,
+.advance-modal-content h1,
+.specialized-modal-content h1  {    
+    text-align: center;
+    font-family: metropolis-bold;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.basic-modal-content h1,
+.life-modal-content h1,
+.sol1-modal-content h1,
+.sol2-modal-content h1,
+.sol3-modal-content h1,
+.cell-training-content h1,
+.baptism-modal-content h1,
+.weddings-modal-content h1,
+.cd-modal-content h1,
+.advance-modal-content h1,
+.specialized-modal-content h1 {    
+    color: #000;
+}
+
+
+.basic-modal-content table,
+.life-modal-content table,
+.sol1-modal-content table,
+.sol2-modal-content table,
+.sol3-modal-content table,
+.cell-training-content table,
+.baptism-modal-content table,
+.weddings-modal-content table,
+.cd-modal-content table,
+.advance-modal-content table,
+.specialized-modal-content table {
+    font-family: metropolis;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #000;
+    border-collapse: separate;
+}
+
+.life-modal-content table thead {
+    position: sticky;
+    top: 0;
+}
+
+.basic-modal-content table th,
+.life-modal-content table th,
+.sol1-modal-content table th,
+.sol2-modal-content table th,
+.sol3-modal-content table th,
+.cell-training-content table th,
+.baptism-modal-content table th,
+.weddings-modal-content table th,
+.cd-modal-content table th,
+.advance-modal-content table th,
+.specialized-modal-content table th {
+    text-align: center;
+    font-family: metropolis-bold;
+    text-transform: uppercase;
+    background-color: #EEEEEE;
+    padding: 5px 10px;
+}
+
+.basic-modal-content table td,
+.life-modal-content table td,
+.sol1-modal-content table td,
+.sol2-modal-content table td,
+.sol3-modal-content table td,
+.cell-training-content table td,
+.baptism-modal-content table td,
+.weddings-modal-content table td,
+.cd-modal-content table td,
+.advance-modal-content table td,
+.specialized-modal-content table td {
+
+    border-right: 1px solid;
+}
+
+
+.basic-modal-content select,
+.life-modal-content select,
+.sol1-modal-content select,
+.sol2-modal-content select,
+.sol3-modal-content select,
+.cell-training-content select,
+.baptism-modal-content select,
+.weddings-modal-content select,
+.cd-modal-content select,
+.advance-modal-content select,
+.specialized-modal-content select {
+    cursor: pointer;
+    font-family: metropolis-bold;
+    font-family: 20px;
+    padding: 10px;
+    border: 0;
+    margin: 10px 0 10px 30px;
+}
+
+.life-modal-content table thead {
+    border: 1px solid #000;
+}
+
+.life-modal-content table tbody tr td:last-child {
+    border: 0;
+}
+
+.basic-modal-content div,
+.life-modal-content div,
+.sol1-modal-content div,
+.sol2-modal-content div,
+.sol3-modal-content div,
+.cell-training-content div,
+.baptism-modal-content div,
+.weddings-modal-content div,
+.cd-modal-content div,
+.advance-modal-content div,
+.specialized-modal-content div  {
+    position: relative;
+    border-collapse: collapse;
+    border-spacing: 0;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+@media (min-width: 769px) {
+    .basic-modal-content div,
+    .life-modal-content div,
+    .sol1-modal-content div,
+    .sol2-modal-content div,
+    .sol3-modal-content div,
+    .cell-training-content div,
+    .baptism-modal-content div,
+    .weddings-modal-content div,
+    .cd-modal-content div,
+    .advance-modal-content div,
+    .specialized-modal-content div {
+        position: relative;
+        border-collapse: collapse;
+        border-spacing: 0;
+        overflow-y: auto;
+        max-height: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Cell Modal */
+.cell-modal-content > .bg-img {
+    background-color: #48BEFF;
+    background-image: url('../images/profile/Vector.png');
+}
+.cell-modal-content form {
+    color: #48BEFF;
+}
+
+.cell-modal-content form > input[type="submit"] {
+    background-color: #48BEFF;
+    color: #ABF7F9;
+}
+
+.cell-modal-content h1 {
+    color: #48BEFF;
+}
+
+.cell-modal-content form input::placeholder,
+.cell-modal-content form label,
+.cell-modal-content form textarea::placeholder{
+    color: #48BEFF;
+}
+
+.cell-modal-content form textarea {
+    border-color: #48BEFF;
+}
+
+.cell-modal-content form .date {
+    border: 0;
+    border-bottom: 1px solid #48BEFF;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.cell-modal-content form input[type="date"] {
+    color: #48BEFF;
+    text-transform: uppercase;
+    border: 0;
+}
+
+
+.cell-modal-content form input {
+    border: 0;
+    border-bottom: 1px solid #48BEFF;
+}
+
+.cell-modal .checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell-modal .checkbox div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.cell-modal .checkbox div label {
+    margin-left: 10px;
+}
+
+.cell-modal .filter-gender {
+    display: flex;
+    justify-content: flex-start;
+    font-family: metropolis;
+}
+
+.cell-modal .filter-gender div {
+    padding: 10px 40px;
+}
+
+.cell-modal .filter-gender .active {
+    background-color: #48BEFF;
+    color: #000;
+}
+
+.cell-modal-content form input::placeholder,
+.cell-modal-content form select,
+.cell-modal-content form label{
+    color: #48BEFF;
+}
+
+
+
+
+
+/* Ministry Modal */
+.ministry-modal-content > .bg-img {
+    background-color: #3DBD96;
+    background-image: url('../images/profile/Vector.png');
+}
+
+.ministry-modal-content form {
+    color: #3DBD96;
+}
+
+.ministry-modal-content form > input[type="submit"] {
+    background-color: #3DBD96;
+    color: #ABF7F9;
+}
+
+.ministry-modal-content h1 {
+    color: #3DBD96;
+}
+
+.ministry-modal-content form input::placeholder,
+.ministry-modal-content form label,
+.ministry-modal-content form textarea::placeholder{
+    color: #3DBD96;
+}
+
+.ministry-modal-content form textarea {
+    border-color: #3DBD96;
+}
+
+.ministry-modal-content form .date {
+    border: 0;
+    border-bottom: 1px solid #3DBD96;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+.ministry-modal-content form input[type="date"] {
+    color: #3DBD96;
+    text-transform: uppercase;
+    border: 0;
+}
+
+
+.ministry-modal-content form input {
+    border: 0;
+    border-bottom: 1px solid #3DBD96;
+}
+
+.ministry-modal .checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ministry-modal .checkbox div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.ministry-modal .checkbox div label {
+    margin-left: 10px;
+}
+
+.ministry-modal .filter-gender {
+    display: flex;
+    justify-content: flex-start;
+    font-family: metropolis;
+}
+
+.ministry-modal .filter-gender div {
+    padding: 10px 40px;
+}
+
+.ministry-modal .filter-gender .active {
+    background-color: #3DBD96;
+    color: #000;
+}
+
+.ministry-modal-content form input::placeholder,
+.ministry-modal-content form select,
+.ministry-modal-content form label{
+    color: #3DBD96;
+}
+
+ 
+
+/* Add Modal */
+
+.add-modal-content > .bg-img {
+    background-color: #A3D465;
+    background-image: url('../images/profile/Vector.png');
+}
+
+.add-modal-content form {
+    color: #A3D465;
+}
+
+.add-modal-content form > input[type="submit"] {
+    background-color: #A3D465;
+    color: #ABF7F9;
+}
+
+.add-modal-content h1 {
+    color: #A3D465;
+}
+
+.add-modal-content form input::placeholder,
+.add-modal-content form label,
+.add-modal-content form textarea::placeholder{
+    color: #A3D465;
+}
+
+.add-modal-content form textarea {
+    border-color: #A3D465;
+}
+
+.add-modal-content form .date {
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid #A3D465;
+    margin-bottom: 10px;
+}
+
+.add-modal-content form .bday {
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid #A3D465;
+    margin-bottom: 10px;
+}
+
+.add-modal-content form .contact-num {
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-bottom: 1px solid #A3D465;
+    margin-bottom: 10px;
+}
+
+.add-modal-content form input[type="date"] {
+    color: #A3D465;
+    text-transform: uppercase;
+    border: 0;
+}
+
+.add-modal-content form > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.add-modal-content form input {
+    border: 0;
+    border-bottom: 1px solid #A3D465;
+}
+
+.add-modal .checkbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add-modal .checkbox div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+}
+
+.add-modal .checkbox div label {
+    margin-left: 10px;
+}
+
+.add-modal .filter-gender {
+    display: flex;
+    justify-content: flex-start;
+    font-family: metropolis;
+}
+
+.add-modal .filter-gender div {
+    padding: 10px 40px;
+}
+
+.add-modal .filter-gender .active {
+    background-color: #A3D465;
+    color: #000;
+}
+
+.add-modal-content form input::placeholder,
+.add-modal-content form select,
+.add-modal-content form label{
+    color: #A3D465;
+}
+
+
+
+.add-modal-content form .checkbox div label {
+    margin-left: 10px;
+}
+
+.add-modal-content form .filter-gender {
+    display: flex;
+    justify-content: flex-start;
+    font-family: metropolis;
+}
+
+.add-modal-content form .filter-gender div {
+    padding: 10px 40px;
+}
+
+.add-modal-content form .filter-gender .active {
+    background-color: #A3D465;
+    color: #000;
+}
+
+/* Table */
+.primary-table {
+    overflow: scroll;
+    border: 1px solid #000;
+    padding-bottom: 90px;
+}
+
+.primary-table table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 1025px) {
+    .primary-table {    
+        margin: 0 20px;
+        padding-bottom: 0;
+    }
+    .primary-table table {
+        width: 100%;
+    }
+}
+  
+.primary-table tr, td, th {
+    border: 0;
+}
+
+.primary-table td, th {
+    padding: 8px;
+}
+
+.primary-table th {
+    font-family: metropolis-bold;
+    font-weight: 700;
+    border-bottom: 1px solid #000;
+    text-align: left;
+    background-color: #EEEEEE;
+    color: #099295;
+    padding: 5px;
+}
+
+.primary-table td {
+    border-right: 1px solid #000;
+}
+
+.primary-table tr td:nth-child(odd) {
+    color: #EEEEEE;
+    background-color: #3CAA89;
+}
+
+.primary-table tr td:nth-child(even) {
+    color: #EEEEEE;
+    background-color: #2A8368;
+}
+
+.primary-table tr td:nth-child(1) {
+    text-transform: uppercase;
+    background-color: #43C59E;
+}
+
+.primary-table tr:nth-child(even) {
+    opacity: .6;
+}
+
+.primary-table .table th {
+    background-color: #EEEEEE;
+    color: #099295;
+    opacity: 1;
+}
